@@ -1,0 +1,549 @@
+/*
+**	GENERALE
+*/
+
+body {
+	width: 70%;
+	margin: auto;
+	border: solid 1px lightgrey;
+	background-color: #ddd;
+	border-right: solid 3px #333;
+	border-left: solid 3px #333;
+}
+
+.corpus {
+	height: 98.5%;
+    width: 70%;
+    position: absolute;
+    background-color: #66b266;
+    overflow: scroll;
+    padding-bottom: 65px;
+    padding-top: 40px;
+    outline: solid 3px;
+}
+
+.container {
+	padding: 15px 0px 0px 65px;
+}
+
+/*
+**	MONTAGE PHOTO
+*/
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #FFA500;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: solid 2px #333;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+	font-size: 100%;
+	display: inline-block;
+}
+
+input[type=submit]:hover {
+    background-color: #E59400;
+}
+
+#display_stiker {
+	text-align: center;
+	margin-bottom: 30px;
+	white-space: nowrap;
+}
+
+.stiker {
+	width: 100px;
+	display: inline-block;
+	margin: 40px 6px 0 0;
+	background-color: green;
+	padding: 10px;
+	border: solid 3px #333;
+	border-radius: 10px;
+}
+
+.form {
+    border-radius: 5px;
+    padding: 50px;
+    width: 55%;
+    margin: 0 auto;
+}
+
+.booth {
+	background-color: #a6a6a6;
+	border: 10px solid #ddd;
+	margin: 0 65px 70px 0;
+	display: inline-block;
+	border-radius: 7px;
+}
+
+.booth-capture-button {
+	display: block;
+	margin: 10px 0;
+	padding: 14px 20px;
+	background-color: #FFA500;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 100%;
+	border: solid 2px #333;
+	cursor: pointer;
+}
+
+.booth-capture-button:hover {
+	background-color: #E59400;
+}
+
+#submit {
+	width: 400px;
+}
+
+#capture {
+	width: 100%;
+}
+
+#canvas {
+	display: none;
+}
+
+#photo {
+	diplay: inline-block;
+}
+
+.stiker_scroll {
+	width: 90%;
+	margin-right: auto;
+	margin-left: auto;
+	overflow-x: scroll;
+	height: 194px;
+	padding: 15px 5px 15px 5px;
+}
+
+#upload {
+	width: 90px;
+	border: none;
+	background-color: white;
+	color: black;
+	font-weight: normal;
+	padding: 0px;
+	font-size: 80%;
+	border: solid 1px #333;
+}
+
+#form_upload {
+	margin-left: 7.5%;
+	border: solid 2px #333;
+	width: 381px;
+	padding: 0px 4px;
+	border-radius: 6px;
+	background-color: #cfcfcf;
+	width: 402px;
+}
+
+/*
+**	MINI GALERIE
+*/
+
+.mini_galery {
+	width: 250px;
+	border: 5px solid #333;
+	display: inline-block;
+	height: 688px;
+	background-color: green;
+	border-radius: 10px;
+	overflow: scroll;
+}
+
+.mini_pic {
+	width: 90%;
+	display: block;
+	margin: 10px 0 10px 9px;
+    border: solid 3px #333;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 168px;
+}
+
+.cross {
+	margin: 1px 0 0 208px;
+}
+
+/*
+**	GALERIE
+*/
+
+#gallery {
+	display: inline-block;
+	width: 40%;
+	margin: 30px 0 15px 6.2%;
+	background-color: #ddd;
+	border: solid 3px #333;
+}
+
+.picture {
+	width: 100%;
+}
+
+#info_pic {
+	width: 100%;
+	height: 20px;
+	padding-left: 5px;
+}
+
+.like_comment {
+	width: 20px;
+}
+
+.cont_like_com {
+	display: inline-block;
+    float: right;
+    margin: -3px 10px 0 6px;
+}
+
+#page_index {
+	text-align: center;
+	padding: 6px 0 3px 0;
+	border-top: solid 2px #333;
+	background-color: white;
+    position: fixed;
+    bottom: 49px;
+    right: 15%;
+    width: 70%;
+}
+
+#image, #video {
+	width: 400px; 
+	height: 300px;
+}
+
+/*
+**	VUE PHOTO UNIQUE
+*/
+
+#gallery2 {
+	display: block;
+	width: 55%;
+	margin: 65px auto 20px auto;
+	background-color: #ddd;
+	border: solid 3px #333;
+}
+
+#cont_main_pic {
+	width: 100%;
+	margin: 0 0 5px 0;
+}
+
+#main_pic {
+	width: 100%;
+}
+
+#submit-comment {
+	width: 100%;
+	height: 35px;
+	padding: 0 0;
+	margin: 10px 0 15px 0;
+}
+
+.commentaire {
+	margin-right: auto;
+	margin-left: auto;
+	width: 55%;
+}
+
+.commentaire_zone {
+	width: 97.7%;
+}
+
+#zone {
+	max-width: 100%;
+	min-width: 100%;
+	min-height: 70px;
+	max-height: 120px;
+	border: solid 2px #333;
+    padding: 3px;
+}
+
+.commentaire_bouton {
+	width: 55%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#info_pic2 {
+	width: 100%;
+	height: 20px;
+	padding-left: 5px;
+}
+
+.afficheCom {
+	width: 100%;
+	background-color: #ccc;
+	min-height: 79px;
+	padding: 1px;
+	max-height: 380px;
+	overflow: scroll;
+	border: solid 2px #333;
+	margin-bottom: 80px;
+}
+
+.com_unique {
+	width: 98%;
+	background-color: white;
+	margin: 7px auto 7px auto;
+	min-height: 46px;
+	border: solid 2px #333;
+	padding: 2px;
+	word-wrap: break-word;
+}
+
+.cross_com {
+	margin: 1px 2px 0 0;
+	width: 10px;
+	float: right;
+}
+
+#title_com {
+	font-weight: bold;
+}
+
+/*
+**	MESSAGE LOG
+*/
+
+#error {
+	color: #ffffff;
+	background-color: #E53B3B;
+	margin: 0px 0px 0 0px;
+	padding: 55px 0 5px 12px;
+	font-weight: 500;
+}
+
+#success {
+	color: #ffffff;
+	background-color: #249024;
+	margin: 0px 0px 0 0px;
+	padding: 55px 0 5px 12px;
+	font-weight: 500;
+}
+
+/*
+**	LOGIN
+*/
+
+#forgot {
+	float:right;
+}
+
+#forgot-link {
+	text-decoration: none;
+	color: black;
+}
+
+#title_forgot {
+	text-align: center;
+	margin-bottom: 15px;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+
+
+
+@media screen and (max-width: 500px)
+{
+    #gallery {
+		display: block;
+		width: 80%;
+		margin: 30px auto 15px auto;
+	}
+
+	.corpus {
+    	width: 100%;
+    }
+}
+
+@media screen and (max-width: 686px)
+{
+    body {
+		width: 100%;
+	}
+
+	.corpus {
+    	width: 100%;
+    }
+
+    #page_index {
+    	width: 100%;
+    	right: 0px;
+    }
+
+}
+
+@media screen and (max-width: 1100px) 
+{ 
+    .booth {
+		display: block;
+		width: 400px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.container {
+    	padding: 15px 0 0 0;
+	}
+	
+	#form_upload {
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.stiker_scroll {
+    	max-width: 90%;
+    }
+
+    .mini_galery {
+	    width: 250px;
+	    border: 5px solid #333;
+	    display: block;
+	    margin-right: auto;
+		margin-left: auto;
+		margin-bottom: 20px;
+	}
+}
+
+@media screen and (max-width: 470px) 
+{
+	.booth {
+		width: 300px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	#image, #video {
+		width: 300px; 
+		height: 215px;
+	}
+
+	#photo {
+		width: 300px;
+	}
+
+	.booth-capture-button {
+		width: 300px;
+	}
+
+	#submit {
+		width: 300px;
+	}
+
+	.stiker_scroll {
+    	max-width: 90%;
+    }
+
+    #form_upload {
+    	width: 300px;
+    }
+
+    #gallery2 {
+    	width: 90%;
+    }
+
+    #zone {
+	    max-width: 163%;
+	    min-width: 163%;
+	    margin-left: -32%;
+	}
+
+	.afficheCom {
+    	width: 163%;
+    	margin-left: -32%;
+    }
+
+    #title_com {
+    	margin-left: -32%;
+	}
+
+	.corpus {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 1250px)
+{
+	.booth {
+    	margin: 0 20px 35px 0;
+	}
+
+	.container {
+    	padding: 15px 0px 0px 15px;
+	}
+
+	#form_upload {
+    	margin-left: 20px;
+	}
+}
+
+@media screen and (min-width: 1400px) 
+{
+	.container {
+    	width: 1000px;
+    	margin-left: auto;
+    	margin-right: auto;
+	}
+
+	.booth {
+	    margin: 0 115px 70px 0;
+	}
+
+	#form_upload {
+    	margin-left: auto;
+    	margin-right: auto;
+	}
+}
+
+@media screen and (min-width: 2000px) 
+{
+	#image, #video, #photo {
+    	width: 500px;
+    	height: 400px;
+	}
+	
+	#submit {
+    	width: 100%; 
+	}
+
+	.mini_galery {
+	    height: 880px;
+	    width: 330px;
+	}
+
+	.mini_pic {
+    	height: 212px;
+    }
+
+    .cross {
+    	margin: 3px 0 0 263px;
+	}
+}
+
+@media screen and (min-width: 2300px) 
+{
+	.stiker_scroll {
+	    width: 100%;
+	    overflow-x: hidden;
+	}
+}
