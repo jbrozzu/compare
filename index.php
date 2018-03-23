@@ -25,11 +25,7 @@
          $pageActuelle = 1;   
     }
 
-    $premiereEntree=($pageActuelle-1)*$messagesParPage;
-    if ($premiereEntree==0) {
-        $premiereEntree=1;
-    }
- 
+    $premiereEntree = ($pageActuelle - 1) * $messagesParPage + 1;
 
     $retour_img = $bdd->prepare('SELECT * FROM Images ORDER BY date_creation DESC LIMIT '.$premiereEntree.', '.$messagesParPage.'');
     $retour_img->execute();

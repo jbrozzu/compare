@@ -157,4 +157,25 @@ function checkLikes($bdd, $user_name, $pic_name) {
      } 
 }
 
+function checkModifPseudo($bdd, $pseudo)
+{
+	if (strlen($pseudo) > 20) {
+		$_SESSION['ERROR_MESSAGE'] = '<div id="error">Ce pseudo est trop long (20 caractères max).</div>';
+		header('Location: profil.php');
+		die;
+	}
+	if (!preg_match('/^[A-Za-z0-9_]+$/', $pseudo)){
+		$_SESSION['ERROR_MESSAGE'] = '<div id="error">Le pseudo est invalide (lettres, chiffres et underscore uniquement).</div>';
+		header('Location: profil.php');
+		die;
+	}
+
+	$req_pseudo = $bdd->prepare('SELECT pseudo FROM USERS where pseudo = :pseudo');
+	$req_pseudo->bindParam(':pseudo', $pseudo);
+	$req_pseudo->execute();
+}
+
 ?>
+
+
+

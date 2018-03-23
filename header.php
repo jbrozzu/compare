@@ -12,7 +12,8 @@
         else { ?>
             <li><a class='nav' href='index.php?page=1'>Galerie</a></li>
             <li><a class='nav' href='cam.php'>Snapshot</a></li>
-            <li style="float:right"><a class='nav' href='logout.php'>Logout <?php echo "   " . htmlspecialchars($_SESSION['pseudo']); ?></a></li>
+            <li style="float:right; border-right:none;"><a class='nav' href='logout.php'>Logout <?php echo "   " . htmlspecialchars($_SESSION['pseudo']); ?></a></li>
+            <li style="float:right; border-right:1px solid #bbb; border-left:1px solid #bbb;"><a class='nav' href='profil.php'> Profil </a></li>
         <?php } ?>
     </ul>
 </header>

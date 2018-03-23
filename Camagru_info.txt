@@ -8,6 +8,8 @@ OK	- Inscription  --> email, pseudo, mdp  +  email de confirmation
 OK	- Connection   --> pseudo, mdp  +  email de réinitialisation mdp
 OK	- Déconnection --> depuis n'importe quelle page, un seul clic
 
+====> NO  - DOIT POUVOIR MODIFIER SON NOM, EMAIL ET MDP 
+
 Partie montage :
 OK	- Accessible seulement aux personnes connectées
 
@@ -22,7 +24,9 @@ OK	- possibilité de supprimer ses montages (pas ceux des autres)
 Partie Galerie :
 OK	- afficher toutes les images de tous les membres, triées par date de création
 OK	- possibilité de les commenter et de les liker
-??	- message envoyer à l'utilisateur quand sa photo est commenté
+
+====> NO	- message envoyer à l'utilisateur quand sa photo est commentée (par défaut) + POSSIBILITÉ DE DESACTIVER
+
 OK	- liste des images paginée
 
 Bonus :
